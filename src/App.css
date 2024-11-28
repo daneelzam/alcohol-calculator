@@ -1,0 +1,122 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url('./snow-background.webp') no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+}
+
+.app {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 15px;
+  background: linear-gradient(145deg, #e0e0e0, #ffffff);
+  box-shadow: inset -8px -8px 16px #bebebe, inset 8px 8px 16px #ffffff;
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.8em;
+  color: #4a4a4a;
+  text-shadow: 1px 1px 2px #fff;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+input {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background: #f0f0f0;
+  box-shadow: inset -4px -4px 8px #bebebe, inset 4px 4px 8px #ffffff;
+  font-size: 1em;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: inset -2px -2px 4px #bebebe, inset 2px 2px 4px #ffffff;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #c9c9c9, #f0f0f0);
+  box-shadow: -4px -4px 8px #bebebe, 4px 4px 8px #ffffff;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  background: linear-gradient(145deg, #e0e0e0, #ffffff);
+}
+
+button:active {
+  box-shadow: inset -4px -4px 8px #bebebe, inset 4px 4px 8px #ffffff;
+}
+
+.result {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #f7f7f7, #ffffff);
+  box-shadow: inset -4px -4px 8px #bebebe, inset 4px 4px 8px #ffffff;
+  text-align: center;
+}
+
+.result h2 {
+  font-size: 1.5em;
+  color: #333;
+}
+
+.result p {
+  font-size: 1.2em;
+  color: #666;
+}
+
+.result .error {
+  color: red;
+}
+
+.quick-options {
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.quick-options button {
+  flex: 1;
+  margin: 0 5px;
+  padding: 8px;
+  font-size: 0.9em;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #d9d9d9, #ffffff);
+  box-shadow: -3px -3px 6px #bebebe, 3px 3px 6px #ffffff;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.quick-options button:hover {
+  background: linear-gradient(145deg, #e0e0e0, #ffffff);
+}
+
+.quick-options button:active {
+  box-shadow: inset -3px -3px 6px #bebebe, inset 3px 3px 6px #ffffff;
+}
