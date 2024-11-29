@@ -1,101 +1,81 @@
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Comic Sans MS', 'Verdana', sans-serif;
   margin: 0;
   padding: 0;
-  background: url('./snow-background.webp') no-repeat center center fixed;
-  background-size: cover;
-  color: #333;
+  background: #87CEEB;
+  color: #000;
+  text-align: center;
 }
 
 .app {
-  max-width: 400px;
+  max-width: 600px;
   margin: 50px auto;
   padding: 20px;
-  border-radius: 15px;
-  background: linear-gradient(145deg, #e0e0e0, #ffffff);
-  box-shadow: inset -8px -8px 16px #bebebe, inset 8px 8px 16px #ffffff;
+  border: 3px solid #000080;
+  background: linear-gradient(to bottom, #FFFFFF, #E0FFFF);
+  box-shadow: 0 0 20px #000080;
 }
 
 h1 {
-  text-align: center;
-  font-size: 1.8em;
-  color: #4a4a4a;
-  text-shadow: 1px 1px 2px #fff;
-  margin-bottom: 20px;
+  font-size: 2.5em;
+  color: #FF4500;
+  text-shadow: 2px 2px 0px #FFD700, 4px 4px 0px #0000FF;
+  margin-bottom: 30px;
 }
 
 .input-group {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+  text-align: left;
 }
 
 label {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #000080;
   display: block;
-  font-size: 1.1em;
-  color: #555;
   margin-bottom: 5px;
 }
 
 input {
+  width: calc(100% - 20px);
   padding: 10px;
-  border: none;
-  border-radius: 10px;
-  background: #f0f0f0;
-  box-shadow: inset -4px -4px 8px #bebebe, inset 4px 4px 8px #ffffff;
-  font-size: 1em;
+  border: 2px inset #A9A9A9;
+  background: #F5F5F5;
+  font-size: 1.1em;
+  color: #000;
 }
 
 input:focus {
   outline: none;
-  box-shadow: inset -2px -2px 4px #bebebe, inset 2px 2px 4px #ffffff;
+  border: 2px outset #FFD700;
+  background: #FFFFE0;
 }
 
 button {
   width: 100%;
   padding: 10px;
   font-size: 1.2em;
-  border: none;
-  border-radius: 10px;
-  background: linear-gradient(145deg, #c9c9c9, #f0f0f0);
-  box-shadow: -4px -4px 8px #bebebe, 4px 4px 8px #ffffff;
+  font-weight: bold;
+  color: #FFF;
+  background: linear-gradient(to bottom, #FF4500, #8B0000);
+  border: 2px solid #000;
+  text-shadow: 1px 1px 2px #000;
   cursor: pointer;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.3s;
 }
 
 button:hover {
-  background: linear-gradient(145deg, #e0e0e0, #ffffff);
+  background: linear-gradient(to bottom, #FFD700, #FF4500);
+  color: #000080;
 }
 
 button:active {
-  box-shadow: inset -4px -4px 8px #bebebe, inset 4px 4px 8px #ffffff;
-}
-
-.result {
-  margin-top: 20px;
-  padding: 15px;
-  border-radius: 10px;
-  background: linear-gradient(145deg, #f7f7f7, #ffffff);
-  box-shadow: inset -4px -4px 8px #bebebe, inset 4px 4px 8px #ffffff;
-  text-align: center;
-}
-
-.result h2 {
-  font-size: 1.5em;
-  color: #333;
-}
-
-.result p {
-  font-size: 1.2em;
-  color: #666;
-}
-
-.result .error {
-  color: red;
+  border: 2px inset #000;
+  background: linear-gradient(to bottom, #8B0000, #FF4500);
 }
 
 .quick-options {
-  margin: 10px 0;
+  margin-top: 10px;
   display: flex;
   justify-content: space-between;
 }
@@ -105,18 +85,75 @@ button:active {
   margin: 0 5px;
   padding: 8px;
   font-size: 0.9em;
-  border: none;
-  border-radius: 10px;
-  background: linear-gradient(145deg, #d9d9d9, #ffffff);
-  box-shadow: -3px -3px 6px #bebebe, 3px 3px 6px #ffffff;
+  color: #FFF;
+  background: linear-gradient(to bottom, #4169E1, #000080);
+  border: 2px solid #000;
   cursor: pointer;
-  transition: all 0.2s ease-in-out;
 }
 
 .quick-options button:hover {
-  background: linear-gradient(145deg, #e0e0e0, #ffffff);
+  background: linear-gradient(to bottom, #87CEEB, #4169E1);
+  color: #FFD700;
 }
 
-.quick-options button:active {
-  box-shadow: inset -3px -3px 6px #bebebe, inset 3px 3px 6px #ffffff;
+.result {
+  margin-top: 20px;
+  padding: 15px;
+  border: 3px ridge #FF4500;
+  background: #FFFFE0;
+  font-size: 1.2em;
+  color: #000;
+}
+
+.result h2 {
+  font-size: 1.8em;
+  color: #FF4500;
+}
+
+.result p {
+  font-size: 1.1em;
+  color: #000080;
+}
+
+.result .error {
+  color: #FF0000;
+  font-weight: bold;
+}
+
+@keyframes rainbow-border {
+  0% { border-color: #FF0000; }
+  25% { border-color: #FFD700; }
+  50% { border-color: #008000; }
+  75% { border-color: #0000FF; }
+  100% { border-color: #FF0000; }
+}
+
+.app {
+  animation: rainbow-border 5s infinite;
+}
+
+.joke-of-the-day {
+  margin-top: 30px;
+  padding: 15px;
+  border: 3px dashed #000080;
+  background: #F0FFF0;
+  color: #006400;
+  font-size: 1.1em;
+  text-align: left;
+  animation: fade-in 1s ease-in;
+}
+
+.joke-of-the-day h2 {
+  color: #FF4500;
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

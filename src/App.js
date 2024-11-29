@@ -104,6 +104,10 @@ const App = () => {
                     <p>Введите данные для расчёта.</p>
                 )}
             </div>
+            <div id="joke" className="joke-of-the-day">
+                <h2>Анекдот дня</h2>
+                <iframe src="http://rzhunemogu.ru/Widzh/Anekdot2.aspx" frameBorder="0" title="joke"></iframe>
+            </div>
         </div>
     );
 };
