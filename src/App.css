@@ -131,29 +131,3 @@ button:active {
 .app {
   animation: rainbow-border 5s infinite;
 }
-
-.joke-of-the-day {
-  margin-top: 30px;
-  padding: 15px;
-  border: 3px dashed #000080;
-  background: #F0FFF0;
-  color: #006400;
-  font-size: 1.1em;
-  text-align: left;
-  animation: fade-in 1s ease-in;
-}
-
-.joke-of-the-day h2 {
-  color: #FF4500;
-  font-size: 1em;
-  margin-bottom: 10px;
-}
-
-@keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
