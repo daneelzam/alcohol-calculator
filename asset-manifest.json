@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/alcohol-calculator/static/css/main.ca44ae17.css",
-    "main.js": "/alcohol-calculator/static/js/main.0943a050.js",
+    "main.css": "/alcohol-calculator/static/css/main.2fddbf29.css",
+    "main.js": "/alcohol-calculator/static/js/main.00fe8ebb.js",
     "static/js/453.7042fa63.chunk.js": "/alcohol-calculator/static/js/453.7042fa63.chunk.js",
-    "static/media/snow-background.webp": "/alcohol-calculator/static/media/snow-background.8b26b8cb5204ba6964e9.webp",
     "index.html": "/alcohol-calculator/index.html",
-    "main.ca44ae17.css.map": "/alcohol-calculator/static/css/main.ca44ae17.css.map",
-    "main.0943a050.js.map": "/alcohol-calculator/static/js/main.0943a050.js.map",
+    "main.2fddbf29.css.map": "/alcohol-calculator/static/css/main.2fddbf29.css.map",
+    "main.00fe8ebb.js.map": "/alcohol-calculator/static/js/main.00fe8ebb.js.map",
     "453.7042fa63.chunk.js.map": "/alcohol-calculator/static/js/453.7042fa63.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ca44ae17.css",
-    "static/js/main.0943a050.js"
+    "static/css/main.2fddbf29.css",
+    "static/js/main.00fe8ebb.js"
   ]
 }
